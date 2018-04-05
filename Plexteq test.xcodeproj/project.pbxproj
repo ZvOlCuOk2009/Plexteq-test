@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84217AEB207606BF00EACACF /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84217AEA207606BF00EACACF /* MyView.m */; };
+		84BD3F3C2075123600160FB4 /* UIView+TSRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BD3F3B2075123600160FB4 /* UIView+TSRotateView.m */; };
+		84D219702074D66200DF38A3 /* TSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2196F2074D66200DF38A3 /* TSView.m */; };
 		84DDF86D2072435100349211 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF86C2072435100349211 /* AppDelegate.m */; };
-		84DDF8702072435100349211 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF86F2072435100349211 /* ViewController.m */; };
+		84DDF8702072435100349211 /* TSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF86F2072435100349211 /* TSViewController.m */; };
 		84DDF8732072435100349211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF8712072435100349211 /* Main.storyboard */; };
 		84DDF8752072435100349211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF8742072435100349211 /* Assets.xcassets */; };
 		84DDF8782072435100349211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF8762072435100349211 /* LaunchScreen.storyboard */; };
@@ -16,11 +19,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840873A92074AF9700190464 /* TSPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSPrefixHeader.pch; sourceTree = "<group>"; };
+		84217AE9207606BF00EACACF /* MyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		84217AEA207606BF00EACACF /* MyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		84BD3F3A2075123600160FB4 /* UIView+TSRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TSRotateView.h"; sourceTree = "<group>"; };
+		84BD3F3B2075123600160FB4 /* UIView+TSRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TSRotateView.m"; sourceTree = "<group>"; };
+		84D2196E2074D66200DF38A3 /* TSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSView.h; sourceTree = "<group>"; };
+		84D2196F2074D66200DF38A3 /* TSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSView.m; sourceTree = "<group>"; };
 		84DDF8682072435100349211 /* Plexteq test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plexteq test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DDF86B2072435100349211 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84DDF86C2072435100349211 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84DDF86E2072435100349211 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84DDF86F2072435100349211 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84DDF86E2072435100349211 /* TSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSViewController.h; sourceTree = "<group>"; };
+		84DDF86F2072435100349211 /* TSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSViewController.m; sourceTree = "<group>"; };
 		84DDF8722072435100349211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84DDF8742072435100349211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DDF8772072435100349211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84BD3F3D2075124000160FB4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				84BD3F3A2075123600160FB4 /* UIView+TSRotateView.h */,
+				84BD3F3B2075123600160FB4 /* UIView+TSRotateView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		84DDF85F2072435100349211 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +77,19 @@
 		84DDF86A2072435100349211 /* Plexteq test */ = {
 			isa = PBXGroup;
 			children = (
+				84BD3F3D2075124000160FB4 /* Category */,
 				84DDF86B2072435100349211 /* AppDelegate.h */,
 				84DDF86C2072435100349211 /* AppDelegate.m */,
-				84DDF86E2072435100349211 /* ViewController.h */,
-				84DDF86F2072435100349211 /* ViewController.m */,
+				84D2196E2074D66200DF38A3 /* TSView.h */,
+				84D2196F2074D66200DF38A3 /* TSView.m */,
+				84217AE9207606BF00EACACF /* MyView.h */,
+				84217AEA207606BF00EACACF /* MyView.m */,
+				84DDF86E2072435100349211 /* TSViewController.h */,
+				84DDF86F2072435100349211 /* TSViewController.m */,
 				84DDF8712072435100349211 /* Main.storyboard */,
 				84DDF8742072435100349211 /* Assets.xcassets */,
 				84DDF8762072435100349211 /* LaunchScreen.storyboard */,
+				840873A92074AF9700190464 /* TSPrefixHeader.pch */,
 				84DDF8792072435100349211 /* Info.plist */,
 				84DDF87A2072435100349211 /* main.m */,
 			);
@@ -142,7 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DDF8702072435100349211 /* ViewController.m in Sources */,
+				84DDF8702072435100349211 /* TSViewController.m in Sources */,
+				84BD3F3C2075123600160FB4 /* UIView+TSRotateView.m in Sources */,
+				84217AEB207606BF00EACACF /* MyView.m in Sources */,
+				84D219702074D66200DF38A3 /* TSView.m in Sources */,
 				84DDF87B2072435100349211 /* main.m in Sources */,
 				84DDF86D2072435100349211 /* AppDelegate.m in Sources */,
 			);
@@ -281,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D7GRV784H;
 				INFOPLIST_FILE = "Plexteq test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "project.Plexteq-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5D7GRV784H;
 				INFOPLIST_FILE = "Plexteq test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "project.Plexteq-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";

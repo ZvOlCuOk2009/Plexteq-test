@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MyView.h
 //  Plexteq test
 //
-//  Created by Admin on 02.04.18.
+//  Created by Admin on 05.04.18.
 //  Copyright © 2018 Tsvigun Aleksander. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MyView : UIView
 
 @end
-
